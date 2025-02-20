@@ -1,5 +1,5 @@
 // index.js in your iChainModels repo
 import CoFoundersAndFoundingBody from "./CoFoundersAndFoundingBody.js";
-import Researchers from "./Researchers.js";
+import Researcher from "./Researcher.js";
 
-export { CoFoundersAndFoundingBody, Researchers };
+export { CoFoundersAndFoundingBody, Researcher };
