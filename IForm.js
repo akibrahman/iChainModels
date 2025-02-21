@@ -8,7 +8,17 @@ const IFormSchema = new mongoose.Schema({
   isImmortal: { type: Boolean, default: false },
   expiry: { type: String, default: "" },
   isUnique: { type: Boolean, default: false },
-  fields: [{ type: String, default: [] }],
+  fields: [
+    {
+      type: {
+        type: String,
+        enum: ["Text", "Number", "Email", "Image", "Date", "Time"],
+        required: true,
+      },
+      title: { type: String, default: "" },
+      isRequired: { type: Boolean, default: false },
+    },
+  ],
   createdAt: { type: String, default: "" },
 });
 
