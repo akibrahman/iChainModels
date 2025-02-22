@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const IFormSchema = new mongoose.Schema({
-  Title: { type: String, default: "" },
+  title: { type: String, default: "" },
   subTitle: { type: String, default: "" },
   description: { type: String, default: "" },
   createdBy: { type: mongoose.Schema.Types.ObjectId, required: true },
